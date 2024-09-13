@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="text-box">
+        <div class="row-1">
+            <button class="btn-color" onclick="clearDisplay()">clear</button>
+            <button class="btn-color" onclick="same('%')">%</button>
+            <button class="btn-color" onclick="same('00')">00</button>
+            <button class="btn-color" onclick="same('/')">/</button>
+        </div>
+        <div class="row-2">
+            <button onclick="same('7')">7</button>
+            <button onclick="same('8')">8</button>
+            <button onclick="same('9')">9</button>
+            <button class="btn-color" onclick="same('*')">*</button>
+        </div>
+        <div class="row-3">
+            <button onclick="same('4')">4</button>
+            <button onclick="same('5')">5</button>
+            <button onclick="same('6')">6</button>
+            <button onclick="same('-')" class="btn-color">-</button>
+        </div>
+        <div class="row-4">
+            <button onclick="same('1')">1</button>
+            <button onclick="same('2')">2</button>
+            <button onclick="same('3')">3</button>
+            <button class="btn-color" onclick="same('+')">+</button>
+        </div>
+        <div class="row-5">
+            <button onclick="same('0')">0</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="same('.')">.</button>
+            <button class="btn-color" onclick="equal()">=</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
